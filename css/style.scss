@@ -74,7 +74,6 @@ $bgtitle: #ED1FFF;
     &__photo {
       @include img;
       margin: 0;
-      animation: 2s slideright;
     }
     &__badge {
       width: 100px;
@@ -112,7 +111,7 @@ $bgtitle: #ED1FFF;
     }
     &__packshotBg {
       @include img;
-      animation: 2s pulse2 infinite;
+      animation: 2s es-rc-content-pulse2 infinite;
     }
     &__packshot {
       position: absolute;
@@ -221,13 +220,12 @@ $bgtitle: #ED1FFF;
       gap: 0;
     }
     &__tick {
-      margin-top: -15px;
       width: 25px;
     }
     &__text {
       @include text;
       font-family: $subtitle;
-      font-size: 14px;
+      font-size: 12px;
       color:#fff;
     }
     &__wrapper {
@@ -572,21 +570,7 @@ $bgtitle: #ED1FFF;
   }
 }
 
-@keyframes pulse {
-0% {
-    transform: scale(1);
-}
-
-60% {
-    transform: scale(1.4);
-}
-
-100% {
-    transform: scale(1);
-}
-}
-
-@keyframes pulse2 {
+@keyframes es-rc-content-pulse2 {
 0% {
     transform: scale(1);
 }
@@ -597,71 +581,5 @@ $bgtitle: #ED1FFF;
 
 100% {
     transform: scale(1);
-}
-}
-
-@keyframes slidedown {
-from {
-    opacity: 0;
-    transform: translateY(-32px);
-}
-
-to {
-    opacity: 1;
-    transform: translateY(0);
-}
-}
-
-@keyframes slideright {
-from {
-    opacity: 0.3;
-    transform: translateX(-100px);
-}
-
-to {
-    opacity: 1;
-    transform: translateX(0);
-}
-}
-
-@keyframes slideleft {
-from {
-    opacity: 0.3;
-    transform: translateX(100px);
-}
-
-to {
-    opacity: 1;
-    transform: translateX(0);
-}
-}
-
-@keyframes load1 {
-from {
-    width: 0;
-}
-
-to {
-    width: 70%;
-}
-}
-
-@keyframes load2 {
-from {
-    width: 0;
-}
-
-to {
-    width: 82%;
-}
-}
-
-@keyframes load3 {
-from {
-    width: 0;
-}
-
-to {
-    width: 98%;
 }
 }
