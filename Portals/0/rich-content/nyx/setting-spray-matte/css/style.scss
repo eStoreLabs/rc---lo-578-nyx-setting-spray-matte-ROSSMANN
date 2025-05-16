@@ -28,7 +28,7 @@ $bgtitle: #ED1FFF;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.2;
-  max-width: 990px;
+  max-width: 982px;
   overflow: hidden;
   background-color: $bgcolor;
 
@@ -47,7 +47,7 @@ $bgtitle: #ED1FFF;
     margin: 0;
     padding: 0;
     position: relative;
-    background-image: url("../images/kv-bg.png");
+    background-image: url("https://www.ros.net.pl/Portals/0/rich-content/nyx/setting-spray-matte/img/kv-bg.jpg");
     background-repeat: repeat-y;
     background-position: right top;
     position: relative;
@@ -531,7 +531,7 @@ $bgtitle: #ED1FFF;
       }
     }
   }
-  @media screen and (min-width: 990px) {
+  @media screen and (min-width: 982px) {
     .es-kv {
       min-height: 430px;
       &__title {
